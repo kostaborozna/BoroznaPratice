@@ -1,4 +1,6 @@
 
+# Создал студент 305 группы Борозна Константин
+
 import psycopg2
 import matplotlib.pyplot as plt
 

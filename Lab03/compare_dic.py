@@ -1,8 +1,12 @@
+# Создал студент 305 группы Борозна Константин
+
+
 import os
 import csv
 import psycopg2
 
-
+conn = psycopg2.connect(host='192.168.124.127', port='5432', dbname='lab02', user='postgres', password='password')
+cursor = conn.cursor()
 
 # Путь к каталогу, содержащему файлы
 files_directory = '/home/borozna/lab03/academic.udayton.edu/kissock/http/Weather/gsod95-current'
