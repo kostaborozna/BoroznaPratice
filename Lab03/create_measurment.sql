@@ -11,7 +11,7 @@ BEGIN
     FOR city_table_name IN
         SELECT table_name
         FROM information_schema.tables
-        WHERE table_schema = 'external'
+        WHERE table_schema = 'FOREIGN'
     LOOP
         -- Check if the table name exists in the dataset field of the city table in the data schema
         EXECUTE format('SELECT id FROM data.city WHERE dataset = %L', city_table_name) INTO city_id;
